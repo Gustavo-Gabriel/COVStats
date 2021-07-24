@@ -11,6 +11,8 @@
 		F1E2848E26AB8D3B00032B50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2848D26AB8D3B00032B50 /* ContentView.swift */; };
 		F1E2849026AB8D3F00032B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E2848F26AB8D3F00032B50 /* Assets.xcassets */; };
 		F1E2849326AB8D3F00032B50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E2849226AB8D3F00032B50 /* Preview Assets.xcassets */; };
+		F1E2849C26AB911B00032B50 /* PreLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2849B26AB911B00032B50 /* PreLaunchView.swift */; };
+		F1E284A026AB92A100032B50 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2849F26AB92A100032B50 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		F1E2848F26AB8D3F00032B50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E2849226AB8D3F00032B50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1E2849426AB8D3F00032B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E2849B26AB911B00032B50 /* PreLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLaunchView.swift; sourceTree = "<group>"; };
+		F1E2849F26AB92A100032B50 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +56,13 @@
 		F1E2848A26AB8D3B00032B50 /* COVStats */ = {
 			isa = PBXGroup;
 			children = (
+				F1E2849D26AB928200032B50 /* Lib */,
 				F1E2848B26AB8D3B00032B50 /* COVStatsApp.swift */,
 				F1E2848D26AB8D3B00032B50 /* ContentView.swift */,
 				F1E2848F26AB8D3F00032B50 /* Assets.xcassets */,
 				F1E2849426AB8D3F00032B50 /* Info.plist */,
 				F1E2849126AB8D3F00032B50 /* Preview Content */,
+				F1E2849B26AB911B00032B50 /* PreLaunchView.swift */,
 			);
 			path = COVStats;
 			sourceTree = "<group>";
@@ -67,6 +73,22 @@
 				F1E2849226AB8D3F00032B50 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1E2849D26AB928200032B50 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				F1E2849E26AB929400032B50 /* Tokens */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		F1E2849E26AB929400032B50 /* Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				F1E2849F26AB92A100032B50 /* Color.swift */,
+			);
+			path = Tokens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E2849C26AB911B00032B50 /* PreLaunchView.swift in Sources */,
+				F1E284A026AB92A100032B50 /* Color.swift in Sources */,
 				F1E2848E26AB8D3B00032B50 /* ContentView.swift in Sources */,
 				F1E2848C26AB8D3B00032B50 /* COVStatsApp.swift in Sources */,
 			);

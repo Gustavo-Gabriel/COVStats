@@ -11,7 +11,7 @@ import SwiftUI
 struct COVStatsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PreLaunchView()
         }
     }
 }
