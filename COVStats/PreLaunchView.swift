@@ -12,7 +12,7 @@ struct PreLaunchView: View {
                 if isOnboarding {
                     OnBoardingView()
                 } else {
-                    ContentView()
+                    HomeView()
                 }
             } else {
                 VStack {
