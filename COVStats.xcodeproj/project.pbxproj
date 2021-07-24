@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F10EAE5826AC799F0089927C /* Symptom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10EAE5726AC799F0089927C /* Symptom.swift */; };
+		F10EAE5B26AC7A7A0089927C /* SymptomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10EAE5A26AC7A7A0089927C /* SymptomData.swift */; };
+		F129B05726AC918000C27FDA /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129B05626AC918000C27FDA /* OnBoardingView.swift */; };
 		F1E2848C26AB8D3B00032B50 /* COVStatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2848B26AB8D3B00032B50 /* COVStatsApp.swift */; };
 		F1E2848E26AB8D3B00032B50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2848D26AB8D3B00032B50 /* ContentView.swift */; };
 		F1E2849026AB8D3F00032B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E2848F26AB8D3F00032B50 /* Assets.xcassets */; };
 		F1E2849326AB8D3F00032B50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E2849226AB8D3F00032B50 /* Preview Assets.xcassets */; };
 		F1E2849C26AB911B00032B50 /* PreLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2849B26AB911B00032B50 /* PreLaunchView.swift */; };
 		F1E284A026AB92A100032B50 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2849F26AB92A100032B50 /* Color.swift */; };
+		F1E284A326AC76AC00032B50 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E284A226AC76AC00032B50 /* PageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F10EAE5726AC799F0089927C /* Symptom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symptom.swift; sourceTree = "<group>"; };
+		F10EAE5A26AC7A7A0089927C /* SymptomData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomData.swift; sourceTree = "<group>"; };
+		F129B05626AC918000C27FDA /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		F1E2848826AB8D3B00032B50 /* COVStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E2848B26AB8D3B00032B50 /* COVStatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVStatsApp.swift; sourceTree = "<group>"; };
 		F1E2848D26AB8D3B00032B50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		F1E2849426AB8D3F00032B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1E2849B26AB911B00032B50 /* PreLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLaunchView.swift; sourceTree = "<group>"; };
 		F1E2849F26AB92A100032B50 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F1E284A226AC76AC00032B50 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F10EAE5526AC794A0089927C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F10EAE5726AC799F0089927C /* Symptom.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F10EAE5926AC7A640089927C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F10EAE5A26AC7A7A0089927C /* SymptomData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F129B05426AC916800C27FDA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F129B05526AC917300C27FDA /* OnBoarding */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F129B05526AC917300C27FDA /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				F129B05626AC918000C27FDA /* OnBoardingView.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
 		F1E2847F26AB8D3B00032B50 = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +96,10 @@
 		F1E2848A26AB8D3B00032B50 /* COVStats */ = {
 			isa = PBXGroup;
 			children = (
-				F1E2849D26AB928200032B50 /* Lib */,
+				F129B05426AC916800C27FDA /* View */,
+				F10EAE5926AC7A640089927C /* Data */,
+				F10EAE5526AC794A0089927C /* Model */,
+				F1E2849D26AB928200032B50 /* Components */,
 				F1E2848B26AB8D3B00032B50 /* COVStatsApp.swift */,
 				F1E2848D26AB8D3B00032B50 /* ContentView.swift */,
 				F1E2848F26AB8D3F00032B50 /* Assets.xcassets */,
@@ -75,12 +118,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F1E2849D26AB928200032B50 /* Lib */ = {
+		F1E2849D26AB928200032B50 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F1E284A126AC769500032B50 /* PageView */,
 				F1E2849E26AB929400032B50 /* Tokens */,
 			);
-			path = Lib;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F1E2849E26AB929400032B50 /* Tokens */ = {
@@ -89,6 +133,14 @@
 				F1E2849F26AB92A100032B50 /* Color.swift */,
 			);
 			path = Tokens;
+			sourceTree = "<group>";
+		};
+		F1E284A126AC769500032B50 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				F1E284A226AC76AC00032B50 /* PageView.swift */,
+			);
+			path = PageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,8 +212,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E284A326AC76AC00032B50 /* PageView.swift in Sources */,
+				F10EAE5B26AC7A7A0089927C /* SymptomData.swift in Sources */,
+				F10EAE5826AC799F0089927C /* Symptom.swift in Sources */,
 				F1E2849C26AB911B00032B50 /* PreLaunchView.swift in Sources */,
 				F1E284A026AB92A100032B50 /* Color.swift in Sources */,
+				F129B05726AC918000C27FDA /* OnBoardingView.swift in Sources */,
 				F1E2848E26AB8D3B00032B50 /* ContentView.swift in Sources */,
 				F1E2848C26AB8D3B00032B50 /* COVStatsApp.swift in Sources */,
 			);

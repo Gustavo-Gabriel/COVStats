@@ -1,21 +1,19 @@
-//
-//  PreLaunchView.swift
-//  COVStats
-//
-//  Created by Gustavo Anjos on 23/07/21.
-//
-
 import SwiftUI
 
 struct PreLaunchView: View {
     
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
     @State private var showHomeView = false
     
     var body: some View {
         
         Group {
             if showHomeView {
-                ContentView()
+                if isOnboarding {
+                    OnBoardingView()
+                } else {
+                    ContentView()
+                }
             } else {
                 VStack {
                     
@@ -27,7 +25,7 @@ struct PreLaunchView: View {
                             .frame(width: 175, height: 175)
                         
                         Text("COVSTATS")
-                            .foregroundColor(Colors.textColorLaunch)
+                            .foregroundColor(Colors.pink)
                             .fontWeight(.semibold)
                             .font(.system(size: 28))
                     }
