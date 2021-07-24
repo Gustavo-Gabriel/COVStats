@@ -10,6 +10,7 @@
 		F10EAE5826AC799F0089927C /* Symptom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10EAE5726AC799F0089927C /* Symptom.swift */; };
 		F10EAE5B26AC7A7A0089927C /* SymptomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10EAE5A26AC7A7A0089927C /* SymptomData.swift */; };
 		F129B05726AC918000C27FDA /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129B05626AC918000C27FDA /* OnBoardingView.swift */; };
+		F129B05C26ACA18900C27FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F129B05B26ACA18900C27FDA /* Assets.xcassets */; };
 		F1E2848C26AB8D3B00032B50 /* COVStatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2848B26AB8D3B00032B50 /* COVStatsApp.swift */; };
 		F1E2848E26AB8D3B00032B50 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2848D26AB8D3B00032B50 /* HomeView.swift */; };
 		F1E2849326AB8D3F00032B50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E2849226AB8D3F00032B50 /* Preview Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		F10EAE5726AC799F0089927C /* Symptom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symptom.swift; sourceTree = "<group>"; };
 		F10EAE5A26AC7A7A0089927C /* SymptomData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomData.swift; sourceTree = "<group>"; };
 		F129B05626AC918000C27FDA /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		F129B05B26ACA18900C27FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Downloads/COVStats-master/COVStats/Assets.xcassets"; sourceTree = "<group>"; };
 		F1E2848826AB8D3B00032B50 /* COVStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E2848B26AB8D3B00032B50 /* COVStatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVStatsApp.swift; sourceTree = "<group>"; };
 		F1E2848D26AB8D3B00032B50 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		F129B05426AC916800C27FDA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F129B05D26ACA1A200C27FDA /* Home */,
 				F129B05526AC917300C27FDA /* OnBoarding */,
 			);
 			path = View;
@@ -75,10 +78,19 @@
 			path = OnBoarding;
 			sourceTree = "<group>";
 		};
+		F129B05D26ACA1A200C27FDA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F1E2848D26AB8D3B00032B50 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		F1E2847F26AB8D3B00032B50 = {
 			isa = PBXGroup;
 			children = (
 				F1E2848A26AB8D3B00032B50 /* COVStats */,
+				F129B05B26ACA18900C27FDA /* Assets.xcassets */,
 				F1E2848926AB8D3B00032B50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,7 +111,6 @@
 				F10EAE5526AC794A0089927C /* Model */,
 				F1E2849D26AB928200032B50 /* Components */,
 				F1E2848B26AB8D3B00032B50 /* COVStatsApp.swift */,
-				F1E2848D26AB8D3B00032B50 /* HomeView.swift */,
 				F1E2849426AB8D3F00032B50 /* Info.plist */,
 				F1E2849126AB8D3F00032B50 /* Preview Content */,
 				F1E2849B26AB911B00032B50 /* PreLaunchView.swift */,
@@ -197,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F129B05C26ACA18900C27FDA /* Assets.xcassets in Resources */,
 				F1E2849326AB8D3F00032B50 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
