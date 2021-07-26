@@ -2,11 +2,15 @@ import SwiftUI
 import QGrid
 
 struct HomeView: View {
+    
+    @ObservedObject var viewModel = HomeViewModel()
+    
     var body: some View {
         NavigationView {
-            QGrid(infoData, columns: 2, hPadding: 16) { info in
+            QGrid(viewModel.cardsInfo, columns: 2, hPadding: 16) { info in
                 CardView(info: info)
             }
+            
             .navigationBarTitle("COVID-19", displayMode: .inline)
             .navigationBarItems(
                 trailing: Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {

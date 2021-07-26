@@ -13,6 +13,11 @@
 		F129B05C26ACA18900C27FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F129B05B26ACA18900C27FDA /* Assets.xcassets */; };
 		F129B06026ACB32000C27FDA /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = F129B05F26ACB32000C27FDA /* Charts */; };
 		F129B06326ACB59F00C27FDA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129B06226ACB59F00C27FDA /* CardView.swift */; };
+		F145764B26AF2ADA00B069F9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145764A26AF2ADA00B069F9 /* API.swift */; };
+		F145765026AF30BE00B069F9 /* All.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145764F26AF30BE00B069F9 /* All.swift */; };
+		F145765226AF31D300B069F9 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145765126AF31D300B069F9 /* APIService.swift */; };
+		F145765626AF41DE00B069F9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145765526AF41DE00B069F9 /* HomeViewModel.swift */; };
+		F145765926AF4B9200B069F9 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145765826AF4B9200B069F9 /* Int+Ext.swift */; };
 		F1BABC6626AE3BF500AE8EB6 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BABC6526AE3BF500AE8EB6 /* Info.swift */; };
 		F1BABC6826AE3C6F00AE8EB6 /* InfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BABC6726AE3C6F00AE8EB6 /* InfoData.swift */; };
 		F1CE6A9526AE375D008E0170 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = F1CE6A9426AE375D008E0170 /* QGrid */; };
@@ -30,6 +35,11 @@
 		F129B05626AC918000C27FDA /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		F129B05B26ACA18900C27FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Downloads/COVStats-master/COVStats/Assets.xcassets"; sourceTree = "<group>"; };
 		F129B06226ACB59F00C27FDA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F145764A26AF2ADA00B069F9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		F145764F26AF30BE00B069F9 /* All.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = All.swift; sourceTree = "<group>"; };
+		F145765126AF31D300B069F9 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F145765526AF41DE00B069F9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F145765826AF4B9200B069F9 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
 		F1BABC6526AE3BF500AE8EB6 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		F1BABC6726AE3C6F00AE8EB6 /* InfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoData.swift; sourceTree = "<group>"; };
 		F1E2848826AB8D3B00032B50 /* COVStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +70,7 @@
 			children = (
 				F10EAE5726AC799F0089927C /* Symptom.swift */,
 				F1BABC6526AE3BF500AE8EB6 /* Info.swift */,
+				F145764F26AF30BE00B069F9 /* All.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -94,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				F1E2848D26AB8D3B00032B50 /* HomeView.swift */,
+				F145765526AF41DE00B069F9 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -104,6 +116,23 @@
 				F129B06226ACB59F00C27FDA /* CardView.swift */,
 			);
 			path = Card;
+			sourceTree = "<group>";
+		};
+		F145764926AF2A8F00B069F9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F145764A26AF2ADA00B069F9 /* API.swift */,
+				F145765126AF31D300B069F9 /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F145765726AF4B8300B069F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F145765826AF4B9200B069F9 /* Int+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F1E2847F26AB8D3B00032B50 = {
@@ -126,6 +155,8 @@
 		F1E2848A26AB8D3B00032B50 /* COVStats */ = {
 			isa = PBXGroup;
 			children = (
+				F145765726AF4B8300B069F9 /* Extensions */,
+				F145764926AF2A8F00B069F9 /* Service */,
 				F129B05426AC916800C27FDA /* View */,
 				F10EAE5926AC7A640089927C /* Data */,
 				F10EAE5526AC794A0089927C /* Model */,
@@ -249,17 +280,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F145765626AF41DE00B069F9 /* HomeViewModel.swift in Sources */,
 				F1E284A326AC76AC00032B50 /* PageView.swift in Sources */,
+				F145765226AF31D300B069F9 /* APIService.swift in Sources */,
 				F129B06326ACB59F00C27FDA /* CardView.swift in Sources */,
 				F10EAE5B26AC7A7A0089927C /* SymptomData.swift in Sources */,
 				F1BABC6626AE3BF500AE8EB6 /* Info.swift in Sources */,
 				F10EAE5826AC799F0089927C /* Symptom.swift in Sources */,
 				F1E2849C26AB911B00032B50 /* PreLaunchView.swift in Sources */,
 				F1BABC6826AE3C6F00AE8EB6 /* InfoData.swift in Sources */,
+				F145764B26AF2ADA00B069F9 /* API.swift in Sources */,
 				F1E284A026AB92A100032B50 /* Color.swift in Sources */,
 				F129B05726AC918000C27FDA /* OnBoardingView.swift in Sources */,
+				F145765026AF30BE00B069F9 /* All.swift in Sources */,
 				F1E2848E26AB8D3B00032B50 /* HomeView.swift in Sources */,
 				F1E2848C26AB8D3B00032B50 /* COVStatsApp.swift in Sources */,
+				F145765926AF4B9200B069F9 /* Int+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
