@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,11 @@
 		F10EAE5B26AC7A7A0089927C /* SymptomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10EAE5A26AC7A7A0089927C /* SymptomData.swift */; };
 		F129B05726AC918000C27FDA /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129B05626AC918000C27FDA /* OnBoardingView.swift */; };
 		F129B05C26ACA18900C27FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F129B05B26ACA18900C27FDA /* Assets.xcassets */; };
+		F129B06026ACB32000C27FDA /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = F129B05F26ACB32000C27FDA /* Charts */; };
+		F129B06326ACB59F00C27FDA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129B06226ACB59F00C27FDA /* CardView.swift */; };
+		F1BABC6626AE3BF500AE8EB6 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BABC6526AE3BF500AE8EB6 /* Info.swift */; };
+		F1BABC6826AE3C6F00AE8EB6 /* InfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BABC6726AE3C6F00AE8EB6 /* InfoData.swift */; };
+		F1CE6A9526AE375D008E0170 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = F1CE6A9426AE375D008E0170 /* QGrid */; };
 		F1E2848C26AB8D3B00032B50 /* COVStatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2848B26AB8D3B00032B50 /* COVStatsApp.swift */; };
 		F1E2848E26AB8D3B00032B50 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2848D26AB8D3B00032B50 /* HomeView.swift */; };
 		F1E2849326AB8D3F00032B50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E2849226AB8D3F00032B50 /* Preview Assets.xcassets */; };
@@ -24,6 +29,9 @@
 		F10EAE5A26AC7A7A0089927C /* SymptomData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomData.swift; sourceTree = "<group>"; };
 		F129B05626AC918000C27FDA /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		F129B05B26ACA18900C27FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Downloads/COVStats-master/COVStats/Assets.xcassets"; sourceTree = "<group>"; };
+		F129B06226ACB59F00C27FDA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F1BABC6526AE3BF500AE8EB6 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		F1BABC6726AE3C6F00AE8EB6 /* InfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoData.swift; sourceTree = "<group>"; };
 		F1E2848826AB8D3B00032B50 /* COVStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E2848B26AB8D3B00032B50 /* COVStatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVStatsApp.swift; sourceTree = "<group>"; };
 		F1E2848D26AB8D3B00032B50 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -39,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1CE6A9526AE375D008E0170 /* QGrid in Frameworks */,
+				F129B06026ACB32000C27FDA /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				F10EAE5726AC799F0089927C /* Symptom.swift */,
+				F1BABC6526AE3BF500AE8EB6 /* Info.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -57,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				F10EAE5A26AC7A7A0089927C /* SymptomData.swift */,
+				F1BABC6726AE3C6F00AE8EB6 /* InfoData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -84,6 +96,14 @@
 				F1E2848D26AB8D3B00032B50 /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		F129B06126ACB59600C27FDA /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				F129B06226ACB59F00C27FDA /* CardView.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 		F1E2847F26AB8D3B00032B50 = {
@@ -129,6 +149,7 @@
 		F1E2849D26AB928200032B50 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F129B06126ACB59600C27FDA /* Card */,
 				F1E284A126AC769500032B50 /* PageView */,
 				F1E2849E26AB929400032B50 /* Tokens */,
 			);
@@ -167,6 +188,10 @@
 			dependencies = (
 			);
 			name = COVStats;
+			packageProductDependencies = (
+				F129B05F26ACB32000C27FDA /* Charts */,
+				F1CE6A9426AE375D008E0170 /* QGrid */,
+			);
 			productName = COVStats;
 			productReference = F1E2848826AB8D3B00032B50 /* COVStats.app */;
 			productType = "com.apple.product-type.application";
@@ -194,6 +219,10 @@
 				Base,
 			);
 			mainGroup = F1E2847F26AB8D3B00032B50;
+			packageReferences = (
+				F129B05E26ACB32000C27FDA /* XCRemoteSwiftPackageReference "swiftui-charts" */,
+				F1CE6A9326AE375D008E0170 /* XCRemoteSwiftPackageReference "QGrid" */,
+			);
 			productRefGroup = F1E2848926AB8D3B00032B50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -221,9 +250,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E284A326AC76AC00032B50 /* PageView.swift in Sources */,
+				F129B06326ACB59F00C27FDA /* CardView.swift in Sources */,
 				F10EAE5B26AC7A7A0089927C /* SymptomData.swift in Sources */,
+				F1BABC6626AE3BF500AE8EB6 /* Info.swift in Sources */,
 				F10EAE5826AC799F0089927C /* Symptom.swift in Sources */,
 				F1E2849C26AB911B00032B50 /* PreLaunchView.swift in Sources */,
+				F1BABC6826AE3C6F00AE8EB6 /* InfoData.swift in Sources */,
 				F1E284A026AB92A100032B50 /* Color.swift in Sources */,
 				F129B05726AC918000C27FDA /* OnBoardingView.swift in Sources */,
 				F1E2848E26AB8D3B00032B50 /* HomeView.swift in Sources */,
@@ -416,6 +448,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F129B05E26ACB32000C27FDA /* XCRemoteSwiftPackageReference "swiftui-charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/spacenation/swiftui-charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F1CE6A9326AE375D008E0170 /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F129B05F26ACB32000C27FDA /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F129B05E26ACB32000C27FDA /* XCRemoteSwiftPackageReference "swiftui-charts" */;
+			productName = Charts;
+		};
+		F1CE6A9426AE375D008E0170 /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1CE6A9326AE375D008E0170 /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F1E2848026AB8D3B00032B50 /* Project object */;
 }

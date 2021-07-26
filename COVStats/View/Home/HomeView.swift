@@ -1,11 +1,12 @@
 import SwiftUI
+import QGrid
 
 struct HomeView: View {
     var body: some View {
-        
         NavigationView {
-            Text("Chegou")
-            
+            QGrid(infoData, columns: 2, hPadding: 16) { info in
+                CardView(info: info)
+            }
             .navigationBarTitle("COVID-19", displayMode: .inline)
             .navigationBarItems(
                 trailing: Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
