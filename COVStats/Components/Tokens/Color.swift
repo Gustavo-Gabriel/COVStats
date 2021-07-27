@@ -6,4 +6,5 @@ public struct Colors {
     static let neutralGray4 = Color.init("neutralGray4")
     static let black = Color.init("black")
     static let white = Color.init("white")
+    static let pinkLight = Color.init("pinkLight")
 }

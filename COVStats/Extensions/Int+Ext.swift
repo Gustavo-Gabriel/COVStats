@@ -7,4 +7,10 @@ extension Int {
         numberFormatter.numberStyle = .decimal
         return numberFormatter.string(from: NSNumber(value:value)) ?? "Valor indefinido"
     }
+    
+    func removeVirgulas(number: String) -> Int? {
+        let num = number.replacingOccurrences(of: ",", with: "")
+        return Int(num)
+    }
 }
+

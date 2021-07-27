@@ -18,6 +18,11 @@
 		F145765226AF31D300B069F9 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145765126AF31D300B069F9 /* APIService.swift */; };
 		F145765626AF41DE00B069F9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145765526AF41DE00B069F9 /* HomeViewModel.swift */; };
 		F145765926AF4B9200B069F9 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145765826AF4B9200B069F9 /* Int+Ext.swift */; };
+		F145765B26AF526400B069F9 /* CardRecoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145765A26AF526400B069F9 /* CardRecoveryView.swift */; };
+		F145765E26AF5D6F00B069F9 /* ChartCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145765D26AF5D6F00B069F9 /* ChartCircleView.swift */; };
+		F145766126AF5FEC00B069F9 /* InfoStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145766026AF5FEC00B069F9 /* InfoStack.swift */; };
+		F145766326AF834E00B069F9 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145766226AF834E00B069F9 /* Double+Ext.swift */; };
+		F145766626AF883500B069F9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145766526AF883500B069F9 /* LoadingView.swift */; };
 		F1BABC6626AE3BF500AE8EB6 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BABC6526AE3BF500AE8EB6 /* Info.swift */; };
 		F1BABC6826AE3C6F00AE8EB6 /* InfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BABC6726AE3C6F00AE8EB6 /* InfoData.swift */; };
 		F1CE6A9526AE375D008E0170 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = F1CE6A9426AE375D008E0170 /* QGrid */; };
@@ -40,6 +45,11 @@
 		F145765126AF31D300B069F9 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		F145765526AF41DE00B069F9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F145765826AF4B9200B069F9 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
+		F145765A26AF526400B069F9 /* CardRecoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRecoveryView.swift; sourceTree = "<group>"; };
+		F145765D26AF5D6F00B069F9 /* ChartCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCircleView.swift; sourceTree = "<group>"; };
+		F145766026AF5FEC00B069F9 /* InfoStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoStack.swift; sourceTree = "<group>"; };
+		F145766226AF834E00B069F9 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		F145766526AF883500B069F9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F1BABC6526AE3BF500AE8EB6 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		F1BABC6726AE3C6F00AE8EB6 /* InfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoData.swift; sourceTree = "<group>"; };
 		F1E2848826AB8D3B00032B50 /* COVStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				F129B06226ACB59F00C27FDA /* CardView.swift */,
+				F145765A26AF526400B069F9 /* CardRecoveryView.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -131,8 +142,33 @@
 			isa = PBXGroup;
 			children = (
 				F145765826AF4B9200B069F9 /* Int+Ext.swift */,
+				F145766226AF834E00B069F9 /* Double+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F145765C26AF5D3E00B069F9 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				F145765D26AF5D6F00B069F9 /* ChartCircleView.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		F145765F26AF5FE000B069F9 /* Stacks */ = {
+			isa = PBXGroup;
+			children = (
+				F145766026AF5FEC00B069F9 /* InfoStack.swift */,
+			);
+			path = Stacks;
+			sourceTree = "<group>";
+		};
+		F145766426AF882600B069F9 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				F145766526AF883500B069F9 /* LoadingView.swift */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 		F1E2847F26AB8D3B00032B50 = {
@@ -180,6 +216,9 @@
 		F1E2849D26AB928200032B50 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F145766426AF882600B069F9 /* Loading */,
+				F145765F26AF5FE000B069F9 /* Stacks */,
+				F145765C26AF5D3E00B069F9 /* Charts */,
 				F129B06126ACB59600C27FDA /* Card */,
 				F1E284A126AC769500032B50 /* PageView */,
 				F1E2849E26AB929400032B50 /* Tokens */,
@@ -285,12 +324,17 @@
 				F145765226AF31D300B069F9 /* APIService.swift in Sources */,
 				F129B06326ACB59F00C27FDA /* CardView.swift in Sources */,
 				F10EAE5B26AC7A7A0089927C /* SymptomData.swift in Sources */,
+				F145766626AF883500B069F9 /* LoadingView.swift in Sources */,
 				F1BABC6626AE3BF500AE8EB6 /* Info.swift in Sources */,
 				F10EAE5826AC799F0089927C /* Symptom.swift in Sources */,
+				F145765E26AF5D6F00B069F9 /* ChartCircleView.swift in Sources */,
+				F145765B26AF526400B069F9 /* CardRecoveryView.swift in Sources */,
+				F145766126AF5FEC00B069F9 /* InfoStack.swift in Sources */,
 				F1E2849C26AB911B00032B50 /* PreLaunchView.swift in Sources */,
 				F1BABC6826AE3C6F00AE8EB6 /* InfoData.swift in Sources */,
 				F145764B26AF2ADA00B069F9 /* API.swift in Sources */,
 				F1E284A026AB92A100032B50 /* Color.swift in Sources */,
+				F145766326AF834E00B069F9 /* Double+Ext.swift in Sources */,
 				F129B05726AC918000C27FDA /* OnBoardingView.swift in Sources */,
 				F145765026AF30BE00B069F9 /* All.swift in Sources */,
 				F1E2848E26AB8D3B00032B50 /* HomeView.swift in Sources */,
