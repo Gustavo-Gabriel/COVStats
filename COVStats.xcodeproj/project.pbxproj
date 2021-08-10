@@ -13,6 +13,7 @@
 		F129B05C26ACA18900C27FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F129B05B26ACA18900C27FDA /* Assets.xcassets */; };
 		F129B06026ACB32000C27FDA /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = F129B05F26ACB32000C27FDA /* Charts */; };
 		F129B06326ACB59F00C27FDA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129B06226ACB59F00C27FDA /* CardView.swift */; };
+		F143E3D426B214C600A2D389 /* CountryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143E3D326B214C600A2D389 /* CountryRowView.swift */; };
 		F145764B26AF2ADA00B069F9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145764A26AF2ADA00B069F9 /* API.swift */; };
 		F145765026AF30BE00B069F9 /* All.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145764F26AF30BE00B069F9 /* All.swift */; };
 		F145765226AF31D300B069F9 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145765126AF31D300B069F9 /* APIService.swift */; };
@@ -40,6 +41,7 @@
 		F129B05626AC918000C27FDA /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		F129B05B26ACA18900C27FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Downloads/COVStats-master/COVStats/Assets.xcassets"; sourceTree = "<group>"; };
 		F129B06226ACB59F00C27FDA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F143E3D326B214C600A2D389 /* CountryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRowView.swift; sourceTree = "<group>"; };
 		F145764A26AF2ADA00B069F9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F145764F26AF30BE00B069F9 /* All.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = All.swift; sourceTree = "<group>"; };
 		F145765126AF31D300B069F9 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -129,6 +131,14 @@
 			path = Card;
 			sourceTree = "<group>";
 		};
+		F143E3D226B214AB00A2D389 /* CountryList */ = {
+			isa = PBXGroup;
+			children = (
+				F143E3D326B214C600A2D389 /* CountryRowView.swift */,
+			);
+			path = CountryList;
+			sourceTree = "<group>";
+		};
 		F145764926AF2A8F00B069F9 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +226,7 @@
 		F1E2849D26AB928200032B50 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F143E3D226B214AB00A2D389 /* CountryList */,
 				F145766426AF882600B069F9 /* Loading */,
 				F145765F26AF5FE000B069F9 /* Stacks */,
 				F145765C26AF5D3E00B069F9 /* Charts */,
@@ -323,6 +334,7 @@
 				F1E284A326AC76AC00032B50 /* PageView.swift in Sources */,
 				F145765226AF31D300B069F9 /* APIService.swift in Sources */,
 				F129B06326ACB59F00C27FDA /* CardView.swift in Sources */,
+				F143E3D426B214C600A2D389 /* CountryRowView.swift in Sources */,
 				F10EAE5B26AC7A7A0089927C /* SymptomData.swift in Sources */,
 				F145766626AF883500B069F9 /* LoadingView.swift in Sources */,
 				F1BABC6626AE3BF500AE8EB6 /* Info.swift in Sources */,

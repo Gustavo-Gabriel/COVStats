@@ -22,12 +22,6 @@ struct HomeView: View {
                             .padding(.horizontal, 16)
                             
                             .navigationBarTitle("COVID-19", displayMode: .inline)
-                            .navigationBarItems(
-                                trailing: Button(action: {}) {
-                                    Image(systemName: "person.fill.checkmark")
-                                        .foregroundColor(Colors.neutralGray3)
-                                }
-                            )
                     }
                 }
                 

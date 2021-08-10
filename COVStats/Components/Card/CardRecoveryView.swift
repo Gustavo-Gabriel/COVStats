@@ -24,6 +24,7 @@ struct CardRecoveryView: View {
                             .font(.system(size: 11))
                             .fontWeight(.regular)
                             .foregroundColor(Colors.black)
+                            .hidden()
                     }
                     .padding(.horizontal, 16)
                     .padding(.top, 16)
